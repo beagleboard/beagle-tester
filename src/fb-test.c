@@ -17,6 +17,8 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "common.h"
+
 void draw_pixel(struct fb_info *fb_info, int x, int y, unsigned color)
 {
 	void *fbmem;

@@ -17,8 +17,8 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <common.h>
-#include <font_8x8.h>
+#include "common.h"
+
 void fb_open(int fb_num, struct fb_info *fb_info)
 {
 	char str[64];
@@ -101,6 +101,7 @@ static void fb_put_char(struct fb_info *fb_info, int x, int y, char c,
 				case 8:
 					p8 =  fb_info->ptr + loc;
 					*p8 = color;
+					break; //???
 				case 16:
 					p16 = fb_info->ptr + loc;
 					*p16 = c16;

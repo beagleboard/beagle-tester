@@ -30,7 +30,7 @@
 #include <rc/time.h>
 #endif
 
-#include <common.h>
+#include "common.h"
 void do_fill_screen(struct fb_info *fb_info, int pattern);
 void draw_pixel(struct fb_info *fb_info, int x, int y, unsigned color);
 
@@ -52,9 +52,9 @@ void draw_pixel(struct fb_info *fb_info, int x, int y, unsigned color);
 int fail = 0;
 int notice_line = 0;
 int display = 1;
+struct fb_info fb_info;
 
 void beagle_test(const char *scan_value);
-void beagle_notice(const char *test, const char *status);
 void do_colorbar();
 #ifdef ENABLE_BLUE
 int blue_specific_tests();

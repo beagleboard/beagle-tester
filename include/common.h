@@ -75,6 +75,6 @@ void fb_sync_gfx(int fd);
 int fb_put_string(struct fb_info *fb_info, int x, int y, const char *s, int maxlen,
 		unsigned color, int clear, int clearlen);
 
-#endif
+void beagle_notice(const char *test, const char *status);
 
-static struct fb_info fb_info;
+#endif

@@ -17,6 +17,9 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "common.h"
+#include "red.h"
+
 int osd3358_sm_ref_design_tests(){
 	
 	int ret;
