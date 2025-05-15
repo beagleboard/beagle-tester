@@ -1,3 +1,9 @@
+beagle-tester (0.1.17rc1) UNRELEASED; urgency=medium
+
+  * Add alsa-utils dependency
+
+ -- Jason Kridner <jkridner@beagleboard.org>  Thu, 15 May 2025 13:53:39 -0400
+
 beagle-tester (0.1.16) bookworm; urgency=low
 
   * Add debian packaging

@@ -8,7 +8,9 @@ Homepage: https://github.com/beagleboard/beagle-tester
 
 Package: beagle-tester
 Architecture: any
-Depends: debconf, bb-customizations (>= 1.20200522), ${shlibs:Depends}, ${misc:Depends}
+Depends: debconf, bb-customizations (>= 1.20200522),
+ alsa-utils (>= 1.2.9),
+ ${shlibs:Depends}, ${misc:Depends}
 Description: Beagle Tester
  Simplify and standardize testing of BeagleBoard.org designs 
 
