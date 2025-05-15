@@ -18,7 +18,7 @@ images:
 	$(MAKE) -C images
 
 clean:
-	$(RM) beagle-tester
+	$(RM) -f beagle-tester
 
 install:
 	$(INSTALL) -m 755 -d $(DESTDIR)$(prefix)/sbin

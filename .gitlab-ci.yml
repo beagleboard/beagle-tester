@@ -1,0 +1,35 @@
+build:
+  stage: build
+  parallel:
+    matrix:
+      - IMAGE: bookworm
+        TAG: [docker-amd64, docker-aarch64-ci, docker-armhf]
+      - IMAGE: noble
+        TAG: [docker-aarch64-ci, docker-riscv64-ci]
+  image: registry.git.beagleboard.org/jkridner/debian-build:${IMAGE}
+  tags:
+    - ${TAG}
+  script:
+    - debuild -us -uc
+    - mkdir -p public/pkg/${IMAGE}
+    - cp ../beagle-tester_*.deb public/pkg/${IMAGE}
+  artifacts:
+    paths:
+      - public
+
+pages:
+  image: registry.git.beagleboard.org/jkridner/debian-build:latest
+  stage: deploy
+  dependencies:
+    - "build: [bookworm, docker-amd64]"
+    - "build: [bookworm, docker-aarch64-ci]"
+    - "build: [bookworm, docker-armhf]"
+    - "build: [noble, docker-aarch64-ci]"
+    - "build: [noble, docker-riscv64-ci]"
+  script:
+    - apindex public/pkg
+  artifacts:
+    paths:
+      - public
+
+

@@ -1,0 +1,5 @@
+beagle-tester (0.1.16) bookworm; urgency=low
+
+  * Add debian packaging
+
+ -- Jason Kridner <jkridner@beagleboard.org>  Thu, 15 May 2025 13:04:21 -0400

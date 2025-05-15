@@ -1,0 +1,14 @@
+Source: beagle-tester
+Section: utils
+Priority: optional
+Build-Depends: debhelper (>= 9), devscripts, debconf (>= 0.2.26)
+Standards-Version: 3.9.8
+Maintainer: Jason Kridner <jkridner@beagleboard.org>
+Homepage: https://github.com/beagleboard/beagle-tester
+
+Package: beagle-tester
+Architecture: any
+Depends: debconf, bb-customizations (>= 1.20200522), ${shlibs:Depends}, ${misc:Depends}
+Description: Beagle Tester
+ Simplify and standardize testing of BeagleBoard.org designs 
+
