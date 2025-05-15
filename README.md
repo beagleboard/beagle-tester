@@ -28,7 +28,7 @@ If not already setup, on a recent [BeagleBoard.org Debian image](https://beagleb
     apt-get update
     DEBIAN_FRONTEND=noninteractive apt-get install -y roboticscape
     cd /opt/source
-    git clone https://github.com/jadonk/beagle-tester
+    git clone https://github.com/beagleboard/beagle-tester
     cd beagle-tester
     make && make install
 
@@ -180,7 +180,7 @@ Manuracturer-specific allocations include, but are not limited to:
 14. Disconnect _power_
 15. Disconnect remaining devices
 
-[cispr]: https://raw.githubusercontent.com/jadonk/beagle-tester/master/images/itu-r-bt1729-colorbar-3200x1800.png
+[cispr]: https://raw.githubusercontent.com/beagleboard/beagle-tester/main/images/itu-r-bt1729-colorbar-3200x1800.png
 [xm-pass]: https://farm1.staticflickr.com/531/31402272653_86721d4fa5_o_d.png
 
 # GamePup
