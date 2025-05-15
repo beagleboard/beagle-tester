@@ -1,2 +1,5 @@
 # ignore binaries
 beagle-tester
+
+# ignore logs
+debian/*.log
