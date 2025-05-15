@@ -27,7 +27,7 @@ pages:
     - "build: [noble, docker-aarch64-ci]"
     - "build: [noble, docker-riscv64-ci]"
   script:
-    - apindex public/pkg
+    - apindex public
   artifacts:
     paths:
       - public
