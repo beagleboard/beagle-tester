@@ -2,7 +2,7 @@
 
 ## I2C
 
-Suggested Click: [Amient 2](https://www.mikroe.com/ambient-2-click)
+Suggested Click: [Ambient 2](https://www.mikroe.com/ambient-2-click)
 
 | Links           | DT symbol    | SCL   | SDA    | microBUS |
 | --------------- | ------------ | ----- | ------ | -------- |
@@ -44,7 +44,7 @@ Suggested Click: [GNSS 7](https://www.mikroe.com/gnss-7-click)
 
 ## CAN
 
-Because CAN isn't a native interface on mikroBUS, we should just make our on mikroBUS add-on for this.
+Because CAN isn't a native interface on mikroBUS, we should just make our own mikroBUS add-on for this.
 
 Because we cannot support UART on all of these pins, it may be necessary to do a software UART implementation to support in some cases or simply not support UART on those mikroBUS sockets.
 
